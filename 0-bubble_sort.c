@@ -9,12 +9,13 @@
  * in ascending order using the Bubble Sort algorithm. It repeatedly compares
  * adjacent elements in the array and swaps them if they are in the wrong order
  * The process is repeated until the entire array is sorted in ascending order.
- * The function uses an optimization by adding a flag 'swapped' to indicate if
- * any swaps were made during a pass. If no swaps were made in a pass,
- * it means the array is already sorted, and the sorting process terminates
- * early to improve efficiency.
- * The function also prints the array after each pass using the
- * 'print_array' function to visualize the sorting process.
+ * The function includes optimizations:
+ *  - If the size of the array is less than 2, it is already sorted, so the
+ *    function returns early without performing any unnecessary iterations.
+ *  - If no swaps were made in a pass, it means the array is already sorted,
+ *    and the sorting process terminates early to improve efficiency.
+ * The function also prints the array after each swap using the 'print_array'
+ * function to visualize the sorting process.
  *
  * Return: This function does not return a value.
  */
