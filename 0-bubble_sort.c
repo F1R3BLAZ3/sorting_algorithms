@@ -21,14 +21,12 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t n, i;
-	int temp, swapped;
+	int temp;
 
 	for (n = 0; n < size - 1; n++)
 	{
 		if (size < 2)
 			break;
-
-		swapped = 0; /* Initialize the flag to 0 (false) */
 		/*
 		 * Last i elements are already in place,
 		 * so we don't need to compare them
@@ -44,12 +42,8 @@ void bubble_sort(int *array, size_t size)
 				temp = array[i];
 				array[i] = array[i + 1];
 				array[i + 1] = temp;
-				swapped = 1;
+				print_array(array, size);
 			}
 		}
-		if (!swapped)
-			break;
-
-		print_array(array, size);
 	}
 }
