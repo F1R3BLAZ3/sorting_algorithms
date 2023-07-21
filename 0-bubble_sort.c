@@ -25,8 +25,6 @@ void bubble_sort(int *array, size_t size)
 
 	for (n = 0; n < size - 1; n++)
 	{
-		if (size < 2)
-			break;
 		/*
 		 * Last i elements are already in place,
 		 * so we don't need to compare them
